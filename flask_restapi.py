@@ -24,7 +24,7 @@ def post_api():
 
 
 # /test_get?language=Python
-@app.route('/test_get', methods=['POST'])
+@app.route('/test_get', methods=['GET'])
 def get_api():
     return "Get is " + request.args.get('language')
 
